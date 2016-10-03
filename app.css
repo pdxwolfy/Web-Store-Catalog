@@ -1,0 +1,17 @@
+html, body {
+  background-color: #ffd005;
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header {
+  background-color: #007fbf;
+  color: #ffffff;
+}
+
+main {
+  background-color: #ebebeb;
+  color: #inherit;
+}
