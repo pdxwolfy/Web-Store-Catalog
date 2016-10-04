@@ -48,7 +48,7 @@ ul {
 }
 
 li {
-  display: inline-block;
+  display: block;
   float: left;
   margin: 8px 1% 9px 1%;
   width: 23.5%;
@@ -77,9 +77,6 @@ figcaption {
   margin-top: 16px;
   text-align: left;
   font-weight: bold;
-}
-
-figcaption p {
 }
 
 figcaption p + p {
