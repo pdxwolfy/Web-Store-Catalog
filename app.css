@@ -1,17 +1,95 @@
 html, body {
-  background-color: #ffd005;
-  color: #000000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  font-weight: bold;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+html {
+  background-color: #ffd505;
+  color: #222222;
 }
 
 header {
-  background-color: #007fbf;
+  background-color: #057ec1;
+  border-radius: 0 0 16px 16px;
   color: #ffffff;
+  margin: 0 auto 30px auto;
+  padding: 30px 0;
+  width: 900px;
+}
+
+h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 25px;
+}
+
+a {
+  color: inherit;
 }
 
 main {
-  background-color: #ebebeb;
-  color: #inherit;
+  background-color: #ececec;
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0 auto 0 auto;
+  padding: 25px;
+  width: 900px;
+}
+
+main h1 {
+  font-size: 2em;
+  padding: 0;
+}
+
+ul {
+  overflow: hidden;
+  padding-bottom: 8px;
+  padding-top: 17px;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  margin: 8px 1% 9px 1%;
+  width: 23.5%;
+}
+
+li:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+li:nth-of-type(4n+1) {
+  clear: both;
+  margin-left: 0;
+}
+
+figure {
+  background-color: #ffffff;
+  color: inherit;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  margin-left: 15px;
+  margin-top: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+figcaption p {
+}
+
+figcaption p + p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+img {
+  margin: 0 auto;
+  height: 140px;
+  width: auto;
 }
