@@ -16,11 +16,24 @@ header {
   width: 900px;
 }
 
-h1 {
-  font-size: 2.4em;
+
+h1, h2, h3 {
   font-weight: bold;
   margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
   padding: 0 25px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 a {
@@ -36,11 +49,6 @@ main {
   width: 900px;
 }
 
-main h1 {
-  font-size: 2em;
-  padding: 0;
-}
-
 ul {
   overflow: hidden;
   padding-bottom: 8px;
@@ -48,9 +56,12 @@ ul {
 }
 
 li {
+  background-color: #ffffff;
+  color: inherit;
   display: block;
   float: left;
   margin: 8px 1% 9px 1%;
+  padding-bottom: 15px;
   width: 23.5%;
 }
 
@@ -63,23 +74,27 @@ li:nth-of-type(4n+1) {
   margin-left: 0;
 }
 
+input[type="checkbox"] {
+  display: none
+}
+
 figure {
-  background-color: #ffffff;
-  color: inherit;
-  margin: 0;
-  padding: 15px 0;
+  box-sizing: border-box;
+  height: 140px;
+  margin: 15px 0 0 0;
+  padding: 0;
   text-align: center;
+  width: 100%;
 }
 
 figcaption {
-  font-size: 1.2rem;
   margin-left: 15px;
-  margin-top: 16px;
+  margin-top: 20px;
   text-align: left;
   font-weight: bold;
 }
 
-figcaption p + p {
+figcaption p {
   font-size: 1rem;
   font-weight: normal;
   margin-top: 5px;
@@ -87,6 +102,27 @@ figcaption p + p {
 
 img {
   margin: 0 auto;
-  height: 140px;
+  height: 100%;
   width: auto;
+}
+
+:checked + figure::after {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+:checked + figure img {
+  height: auto;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 400px;
+  z-index: 2;
 }
